@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+#board {
+    background-image: url("/graphics/board-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#status-bar {
+    background-image: url("/graphics/state-panel-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 10vw;
+    background-position: center;
+}
+
+#map {
+    width: 60vh;
+    height: 60vh;
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: .15rem .15rem;
+    justify-self: center;
+}
+
+.cell {
+    border: 1px solid rgb(103, 101, 168);
+    background-color: rgb(103, 101, 168, 0.4);
+    width: 100%;
+}
